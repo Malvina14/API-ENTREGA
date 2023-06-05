@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cuentos Infantiles</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+<body>
+  <h1> Cuentos Infantiles</h1>
+  <div id="mensaje"></div>
+  <table id="cuentosTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Contenido</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <form id="cuentoForm">
+    <h2>Agregar/Editar Cuento</h2>
+    <div>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" required>
+    </div>
+    <div>
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" required>
+    </div>
+    <div>
+      <label for="contenido">Contenido:</label>
+      <textarea id="contenido" required></textarea>
+    </div>
+    <div>
+      <button type="submit">Guardar</button>
+      <button type="button" id="cancelButton">Cancelar</button>
+    </div>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
